@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web Responsiva</title>
+    <link rel="stylesheet" href="proyectoprueba.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h1>Bienvenido a la Página Web</h1>
+            <p>Esta es una página web de ejemplo que es responsiva y contiene menús y botones interactivos.</p>
+            <button onclick="mostrarSeccion('servicios')">Ver Servicios</button>
+        </section>
+
+        <section id="servicios" style="display:none;">
+            <h2>Nuestros Servicios</h2>
+            <p>Ofrecemos una variedad de servicios para ayudarte a mejorar tu negocio.</p>
+            <button onclick="mostrarSeccion('contacto')">Contactar</button>
+        </section>
+
+        <section id="contacto" style="display:none;">
+            <h2>Contáctanos</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="proyectoprueba.js"></script>
+</body>
+</html>
